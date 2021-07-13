@@ -1,0 +1,19 @@
+$engine: 3
+$onesync: on
+name: Fivem Default
+version: 3.1.0
+author: LycusCoder
+description: Resep script base minimal untuk fivem.
+
+tasks: 
+  # Download default CFX resources
+  - action: download_github
+    src: https://github.com/citizenfx/cfx-server-data
+    ref: 0169fdddaa9511558cfa17bcf80a832f56c359ff
+    subpath: resources
+    dest: ./resources
+
+  # Download default server.cfg
+  - action: download_file
+    url: https://raw.githubusercontent.com/LycusCoder/Fivem-Default-Recipe/main/server.cfg
+    path: ./server.cfg
